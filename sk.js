@@ -39,3 +39,19 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
   if(textArray.length) setTimeout(type, newTextDelay + 250);
 });
+
+function openLI(){
+  window.open("https://www.linkedin.com/in/seojin-kim-35080918a/");
+}
+
+function openGH(){
+  window.open("https://github.com/SeojinK1m");
+}
+
+function openResume(){
+  window.open("Sam Kim Resume.pdf");
+}
+
+function openRick(){
+  window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO");
+}

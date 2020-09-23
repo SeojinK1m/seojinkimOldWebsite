@@ -67,10 +67,11 @@ body, html {
   .element{
       position: fixed;
       left:35%;
-      top:40%;
+      top:37.5%;
       z-index:0;
       text-align: left;
       align-content: left;
+      width: 30%;
   }
 
   ul {
@@ -85,10 +86,23 @@ p{
 button {
   background-color: black; /* Green */
   border: none;
-  color: white;
   text-align: left;
+  margin-bottom: 10%;
+  transition-duration: 0.5;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+button:hover{
+  background-color: rgb(255, 153, 0);
+}
+
+
+.buttonText{
+  animation: textColor 20s infinite linear;
   font-size: 4rem;
-  margin-bottom: 15%;
+  color:rgb(246, 255, 163);
+  font-family: 'Montserrat', sans-serif;
 }
 
 @keyframes bgColor {
@@ -101,5 +115,18 @@ button {
   }
   100% {
     background-color: rgb(246, 255, 163);
+  }
+}
+
+@keyframes textColor {
+
+  33% {
+    color: #adff5b;
+  }
+  66% {
+    color: #9affff;
+  }
+  100% {
+    color: rgb(246, 255, 163);
   }
 }
