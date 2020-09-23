@@ -10,13 +10,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  word-wrap: break-word;
+  animation: bgColor 20s infinite linear;
 }
 .container h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   padding: 0.5rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
   text-align: center;
+  
 }
 .container h1 span.typed-text {
   font-weight: normal;
@@ -44,13 +47,14 @@ body, html {
     height: 100%;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
+    animation: bgColor 20s infinite linear;
   }
   
   .parallax {
     /* The image used */
     background-color:black;
     /* Full height */
-    height: 90%; 
+    height: 75%; 
     width: 100%;
   
     /* Create the parallax scrolling effect */
@@ -62,9 +66,40 @@ body, html {
   }
   .element{
       position: fixed;
-      left:50%;
-      top:50%;
+      left:35%;
+      top:40%;
       z-index:0;
+      text-align: left;
+      align-content: left;
   }
 
- 
+  ul {
+    list-style-type: none;
+    text-align: center;
+    align-content: center;
+}
+p{
+  font-size: 1.5rem;
+}
+
+button {
+  background-color: black; /* Green */
+  border: none;
+  color: white;
+  text-align: left;
+  font-size: 4rem;
+  margin-bottom: 15%;
+}
+
+@keyframes bgColor {
+
+  33% {
+    background-color: #adff5b;
+  }
+  66% {
+    background-color: #9affff;
+  }
+  100% {
+    background-color: rgb(246, 255, 163);
+  }
+}
